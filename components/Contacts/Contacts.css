@@ -1,0 +1,93 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+}
+.contacts__container {
+    display: flex;
+    margin-top: 40px;
+}
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-size: 22px;
+    justify-content: center;
+}
+
+.contacts__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contacts__title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contacts__phone {
+    margin-top: 10px;
+}
+
+.contacts__phone>a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts__phone>a:hover {
+   color:rgb(68, 125, 190);
+}
+
+.contacts__phone>a:active {
+    opacity: 0.8;
+}
+
+.kyivstar {
+    display: flex;
+}
+.lifecell {
+    display: flex;
+}
+
+.mts {
+    display: flex;
+}
+
+.contacts__icon-mts {
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.contacts__time {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.contacts__map {
+    width: 100%;
+    height: 400px;
+}
+.map {
+    width: 50%;
+}
+@media (max-width:1024px) {
+    .contacts__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__info {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .map {
+        width: 100%;
+        margin-top: 30px;
+    }
+}

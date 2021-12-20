@@ -1,0 +1,33 @@
+.bg-image {
+    background-image: url(../Qr-code/Subtract.png);
+    background-size: cover;
+    max-width: 1155px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 30px;
+    max-height: 394px;
+    height: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.qr-text {
+    margin-top: 20px;
+    font-size: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.qr-code {
+    margin: 40px;
+    max-width: 220px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .qr-text {
+        font-size: 30px;
+    }
+}

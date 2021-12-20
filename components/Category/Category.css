@@ -1,0 +1,136 @@
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 10px;
+    max-width: 1160px;
+}
+
+.swiper {
+    margin-top: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 20%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(48, 117, 198);
+    z-index: 1;
+    fill: rgb(48, 117, 198);
+}
+
+.swiper-button-prev:hover {
+    background-color: rgb(48, 117, 198);
+    fill: white;
+}
+
+.swiper-button-next:hover {
+    background-color: rgb(48, 117, 198);
+    fill: white;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: none;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+    content: none;
+}
+
+.swiper-button-prev {
+    left: 92%;
+}
+
+.swiper-button-next {
+    right: 2%;
+}
+
+.category__title {
+    font-size: 35px;
+    max-width: 350px;
+    margin-top: 50px;
+}
+
+.heading-line {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin-right: 15px;
+}
+
+.category__main-title {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    padding-top: 40px;
+}
+
+.category__title {
+    font-size: 16px;
+    color: gray;
+}
+
+.category__wallpaper {
+    width: 125px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 9px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .swiper-button-prev {
+        left: 85%;
+    }
+}
+
+@media (max-width: 736px) {
+    .category {
+        padding: 30px 10px;
+    }
+
+    .category__main-title {
+        margin: 0  auto;
+    }
+
+    .category__title {
+        margin: 35px auto 0;
+    }
+
+    .category__wallpaper {
+        width: 200px;
+        height: 280px;
+    }
+
+    .swiper-button-prev {
+        top: 100%;
+        left: 40%;
+    }
+    
+    .swiper-button-next {
+        top: 100%;
+        right: 40%;
+    }
+}
